@@ -7,13 +7,20 @@ A simple one-page website in Spanish for Lavarapi, a laundry in Pergamino. It sh
 ## What we have
 
 - **Template:** `index.html`, "The Copper Fig". It's a single page built with Tailwind, with no build step. Colors and fonts are set in one small config block near the top of the file.
-- **Logo:** `logo.jpg`, 150×150. Sky blue, white bubbles, pink towels.
+- **Logo:** `logo.jpg`, 150×150. Sky blue, white bubbles, pink towels. The site colors come from it, with a dark navy (`#0f2a43`) for the dark backgrounds. We tried the flyer's royal blue (`#1a4fa0`): it clashed with the logo and made light blue text hard to read. The logo is used as the browser-tab icon only, not in the nav bar.
+- **Visible name:** **Lavarapi** (not LavaRapi).
 - **Business info** (from `info.txt`):
   - Monroe 532, Pergamino
   - 2477 611241 / 2477 455395
   - Monday to Friday 8–20 hs, Saturday 8–13 hs
   - "Servicio de lavandería en general" (general laundry service)
   - Instagram: lavarapi.perga
+- **Flyers:** `image-passed-0.jpg` and `image-passed-1.jpg`. They add:
+  - Name written "LavaRapi", tagline "Lavadero de ropa"
+  - Services: lavado, secado y planchado (washing, drying, ironing)
+  - Pickup and delivery: "Retiramos la ropa de tu casa y te la llevamos hasta la puerta"
+  - WhatsApp on both numbers
+  - A second logo (navy and sky-blue washing machine). We keep `logo.jpg` for the site.
 
 ## Constraints
 
@@ -25,10 +32,10 @@ A simple one-page website in Spanish for Lavarapi, a laundry in Pergamino. It sh
 
 | # | Step | Kind | Status |
 |---|---|---|---|
-| 0 | Colors and fonts based on the logo, page in Spanish, page title | Style: you confirm, then I apply | Applied, waiting for browser check |
-| 1 | Nav bar + hero (welcome block) | Section | Pending |
+| 0 | Colors and fonts based on the logo, page in Spanish, page title | Style: you confirm, then I apply | Done |
+| 1 | Nav bar + hero (welcome block) | Section | Done |
 | 2 | Nosotros (about us), replacing "Our Story" | Section | Pending |
-| 3 | Servicios (services), replacing the menu | Section | Pending |
+| 3 | Servicios (services), replacing the menu: lavado, secado, planchado, retiro y entrega a domicilio | Section | Pending |
 | 4 | Horarios y ubicación (hours and location) | Section | Pending |
 | 5 | Contacto (WhatsApp / call / Instagram), replacing "Reserve" | Section | Pending |
 | 6 | Footer + search-engine business data (Restaurant → laundry) | Section | Pending |
@@ -44,7 +51,7 @@ For each step, the loop is:
 
 ## Assumptions to confirm
 
-- Both phone numbers are mobiles with WhatsApp. If so, the WhatsApp link would be `wa.me/5492477611241`.
+- ~~Both phone numbers are mobiles with WhatsApp.~~ Confirmed by the flyer. WhatsApp links: `wa.me/5492477611241` and `wa.me/5492477455395`.
 - We don't have photos yet. The one photo spot keeps its placeholder box until there's a real photo of the shop.
 - Prices are unknown for now, so the services list either shows placeholder prices or no prices at all.
 
