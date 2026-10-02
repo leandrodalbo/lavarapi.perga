@@ -38,7 +38,7 @@ A simple one-page website in Spanish for Lavarapi, a laundry in Pergamino. It sh
 | 3 | Servicios (services), replacing the menu: lavado, secado, planchado, retiro y entrega a domicilio | Section | Done. Prices and promos requested from the family. |
 | 4 | Horarios y ubicación (hours and location) | Section | Done |
 | 5 | Contacto (WhatsApp / call / Instagram), replacing "Reserve" | Section | Done |
-| 6 | Footer + search-engine business data (Restaurant → laundry) | Section | Applied, waiting for browser check |
+| 6 | Footer + search-engine business data (Restaurant → laundry) | Section | Done |
 
 For each step, the loop is:
 
@@ -55,7 +55,11 @@ For each step, the loop is:
 - We don't have photos yet. The one photo spot (Nosotros) shows the pickup-and-delivery flyer (`image-passed-1.jpg`) until there's a real photo of the shop.
 - Prices are unknown for now, so the services list either shows placeholder prices or no prices at all.
 
+## Decisions
+
+- **Tests:** none. Each section was specified, approved, applied and checked in the browser.
+- **WhatsApp buttons:** open the chat with no ready-made message.
+
 ## Open decisions
 
-1. **Tests:** should section changes just be approved by you, the same as style changes? Or do you want small automated checks per section (address, phones, links)?
-2. **Git:** this folder isn't a repository yet. Should we run `git init` so each step can be committed?
+1. **Git:** this folder isn't a repository yet. Should we run `git init` so each step can be committed?
