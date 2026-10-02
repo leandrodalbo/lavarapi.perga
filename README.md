@@ -1,65 +1,42 @@
-# Plan: Lavarapi website
+# Lavarapi website
 
-## Goal
+One-page website for Lavarapi, a laundry in Pergamino. Live at **https://lavarapi.com**.
 
-A simple one-page website in Spanish for Lavarapi, a laundry in Pergamino. It should show what they do, the hours and address, and make it easy to get in touch by WhatsApp or phone.
+## Files
 
-## What we have
+| File | What it is |
+|---|---|
+| `index.html` | The whole site |
+| `logo.jpg` | Browser-tab icon and logo for Google |
+| `image-passed-1.jpg` | Flyer shown in the Nosotros section |
+| `PLAN.md` | How the site was built, step by step |
+| `TDCG/` | The working method (ask before every change, one section at a time) |
+| `info.txt`, `image-passed-0.jpg` | Source material, not used on the site |
 
-- **Template:** `index.html`, "The Copper Fig". It's a single page built with Tailwind, with no build step. Colors and fonts are set in one small config block near the top of the file.
-- **Logo:** `logo.jpg`, 150×150. Sky blue, white bubbles, pink towels. The site colors come from it, with a dark navy (`#0f2a43`) for the dark backgrounds. We tried the flyer's royal blue (`#1a4fa0`): it clashed with the logo and made light blue text hard to read. The logo is used as the browser-tab icon only, not in the nav bar.
-- **Visible name:** **Lavarapi** (not LavaRapi).
-- **Business info** (from `info.txt`):
-  - Monroe 532, Pergamino
-  - 2477 611241 / 2477 455395
-  - Monday to Friday 8–20 hs, Saturday 8–13 hs
-  - "Servicio de lavandería en general" (general laundry service)
-  - Instagram: lavarapi.perga
-- **Flyers:** `image-passed-0.jpg` and `image-passed-1.jpg`. They add:
-  - Name written "LavaRapi", tagline "Lavadero de ropa"
-  - Services: lavado, secado y planchado (washing, drying, ironing)
-  - Pickup and delivery: "Retiramos la ropa de tu casa y te la llevamos hasta la puerta"
-  - WhatsApp on both numbers
-  - A second logo (navy and sky-blue washing machine). We keep `logo.jpg` for the site.
+## How to edit
 
-## Constraints
+1. Open `index.html` in any text editor.
+2. Find the section by its label: `NAV`, `HERO`, `NOSOTROS`, `SERVICIOS`, `HORARIOS`, `CONTACTO`, `FOOTER`.
+3. Colors and fonts are in the `tailwind.config` block near the top of the file.
+4. Upload the changed files to the hosting.
 
-- Keep the template's structure, layout and visual style.
-- Work one section at a time, and ask before every change (see `TDCG/`).
-- Where we don't have the content yet, use placeholder text marked with a `<!-- TODO -->` comment.
+There's no build step. Open `index.html` in a browser to preview.
 
-## Steps
+## Business data and where it appears
 
-| # | Step | Kind | Status |
-|---|---|---|---|
-| 0 | Colors and fonts based on the logo, page in Spanish, page title | Style: you confirm, then I apply | Done |
-| 1 | Nav bar + hero (welcome block) | Section | Done |
-| 2 | Nosotros (about us), replacing "Our Story" | Section | Done |
-| 3 | Servicios (services), replacing the menu: lavado, secado, planchado, retiro y entrega a domicilio | Section | Done. Prices and promos requested from the family. |
-| 4 | Horarios y ubicación (hours and location) | Section | Done |
-| 5 | Contacto (WhatsApp / call / Instagram), replacing "Reserve" | Section | Done |
-| 6 | Footer + search-engine business data (Restaurant → laundry) | Section | Done |
+When something changes, update every place listed:
 
-For each step, the loop is:
+| Data | Where it appears in `index.html` |
+|---|---|
+| Phones | Hero WhatsApp button, Horarios, Contacto buttons, footer, Google info (`application/ld+json` at the bottom) |
+| Hours | Hero figures, Horarios, page description (`<meta name="description">`), Google info |
+| Address | Hero, Horarios, Contacto, footer, page description, Google info |
+| Instagram | Horarios, Contacto, Google info |
 
-1. I write a short spec (what changes and the exact texts).
-2. You approve it.
-3. I apply it.
-4. You check it in the browser.
-5. We fix anything that's off.
-6. Commit.
+## Pending
 
-## Assumptions to confirm
+Marked with `<!-- TODO -->` in `index.html`:
 
-- ~~Both phone numbers are mobiles with WhatsApp.~~ Confirmed by the flyer. WhatsApp links: `wa.me/5492477611241` and `wa.me/5492477455395`.
-- We don't have photos yet. The one photo spot (Nosotros) shows the pickup-and-delivery flyer (`image-passed-1.jpg`) until there's a real photo of the shop.
-- Prices are unknown for now, so the services list either shows placeholder prices or no prices at all.
-
-## Decisions
-
-- **Tests:** none. Each section was specified, approved, applied and checked in the browser.
-- **WhatsApp buttons:** open the chat with no ready-made message.
-
-## Open decisions
-
-1. **Git:** this folder isn't a repository yet. Should we run `git init` so each step can be committed?
+- Prices or promos for the services list (now "Consultar")
+- The real story and names for Nosotros
+- A real photo of the shop to replace the flyer

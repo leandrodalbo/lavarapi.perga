@@ -98,7 +98,7 @@
     </div>
     <div class="fade-up">
       <p class="text-xs uppercase tracking-[0.35em] text-aquadark">Nosotros</p>
-      <h2 class="mt-4 font-display text-4xl font-light leading-tight md:text-5xl">La lavandería del barrio, atendida por su familia.</h2>
+      <h2 class="mt-4 font-display text-4xl font-light leading-tight md:text-5xl">La major lavandería, atendida por su familia.</h2>
       <!-- TODO: completar con la historia real (cuándo abrieron, quiénes atienden) -->
       <p class="mt-6 leading-relaxed text-ink/75">
         Lavarapi es un emprendimiento familiar de Pergamino. Abrimos en Monroe 532 para que lavar
@@ -142,7 +142,7 @@
           </ul>
           <div class="mt-12 rounded-2xl border border-aqua/40 bg-foam p-6">
             <p class="font-display text-xl">Retiro y entrega a domicilio</p>
-            <p class="mt-2 text-sm leading-relaxed text-ink/70">Retiramos la ropa de tu casa y te la llevamos hasta la puerta. Escribinos por WhatsApp para coordinar el día y horario.</p>
+            <p class="mt-2 text-sm leading-relaxed text-ink/70">Sin moverte de tu casa: la buscamos y te la traemos lavada, seca y planchada.</p>
           </div>
         </div>
       </div>
@@ -215,12 +215,13 @@
     document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
   </script>
 
-  <!-- TODO: cuando haya dominio, agregar "url" y "image" (dirección completa del logo) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "DryCleaningOrLaundry",
     "name": "Lavarapi",
+    "url": "https://lavarapi.com",
+    "image": "https://lavarapi.com/logo.jpg",
     "telephone": ["+54 9 2477 611241", "+54 9 2477 455395"],
     "address": {
       "@type": "PostalAddress",
