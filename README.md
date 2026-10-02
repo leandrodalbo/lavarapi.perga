@@ -34,7 +34,7 @@ A simple one-page website in Spanish for Lavarapi, a laundry in Pergamino. It sh
 |---|---|---|---|
 | 0 | Colors and fonts based on the logo, page in Spanish, page title | Style: you confirm, then I apply | Done |
 | 1 | Nav bar + hero (welcome block) | Section | Done |
-| 2 | Nosotros (about us), replacing "Our Story" | Section | Pending |
+| 2 | Nosotros (about us), replacing "Our Story" | Section | Applied, waiting for browser check |
 | 3 | Servicios (services), replacing the menu: lavado, secado, planchado, retiro y entrega a domicilio | Section | Pending |
 | 4 | Horarios y ubicación (hours and location) | Section | Pending |
 | 5 | Contacto (WhatsApp / call / Instagram), replacing "Reserve" | Section | Pending |
@@ -52,7 +52,7 @@ For each step, the loop is:
 ## Assumptions to confirm
 
 - ~~Both phone numbers are mobiles with WhatsApp.~~ Confirmed by the flyer. WhatsApp links: `wa.me/5492477611241` and `wa.me/5492477455395`.
-- We don't have photos yet. The one photo spot keeps its placeholder box until there's a real photo of the shop.
+- We don't have photos yet. The one photo spot (Nosotros) shows the pickup-and-delivery flyer (`image-passed-1.jpg`) until there's a real photo of the shop.
 - Prices are unknown for now, so the services list either shows placeholder prices or no prices at all.
 
 ## Open decisions
