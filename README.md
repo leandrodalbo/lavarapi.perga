@@ -36,9 +36,9 @@ A simple one-page website in Spanish for Lavarapi, a laundry in Pergamino. It sh
 | 1 | Nav bar + hero (welcome block) | Section | Done |
 | 2 | Nosotros (about us), replacing "Our Story" | Section | Done |
 | 3 | Servicios (services), replacing the menu: lavado, secado, planchado, retiro y entrega a domicilio | Section | Done. Prices and promos requested from the family. |
-| 4 | Horarios y ubicación (hours and location) | Section | Applied, waiting for browser check |
-| 5 | Contacto (WhatsApp / call / Instagram), replacing "Reserve" | Section | Pending |
-| 6 | Footer + search-engine business data (Restaurant → laundry) | Section | Pending |
+| 4 | Horarios y ubicación (hours and location) | Section | Done |
+| 5 | Contacto (WhatsApp / call / Instagram), replacing "Reserve" | Section | Done |
+| 6 | Footer + search-engine business data (Restaurant → laundry) | Section | Applied, waiting for browser check |
 
 For each step, the loop is:
 

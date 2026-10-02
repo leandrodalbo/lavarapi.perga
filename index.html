@@ -51,7 +51,7 @@
         <a href="#story" class="transition hover:text-aqua">Nosotros</a>
         <a href="#servicios" class="transition hover:text-aqua">Servicios</a>
         <a href="#horarios" class="transition hover:text-aqua">Horarios y ubicación</a>
-        <a href="#reserve" class="rounded-full border border-aqua px-5 py-2 text-aqua transition hover:bg-aqua hover:text-ink">Contacto</a>
+        <a href="#contacto" class="rounded-full border border-aqua px-5 py-2 text-aqua transition hover:bg-aqua hover:text-ink">Contacto</a>
       </nav>
       <button id="navToggle" aria-label="Abrir menú" aria-expanded="false" class="md:hidden">
         <svg class="h-7 w-7" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg>
@@ -61,7 +61,7 @@
       <a href="#story" class="py-3">Nosotros</a>
       <a href="#servicios" class="py-3">Servicios</a>
       <a href="#horarios" class="py-3">Horarios y ubicación</a>
-      <a href="#reserve" class="mt-2 rounded-full border border-aqua px-5 py-3 text-center text-aqua">Contacto</a>
+      <a href="#contacto" class="mt-2 rounded-full border border-aqua px-5 py-3 text-center text-aqua">Contacto</a>
     </nav>
   </header>
 
@@ -173,25 +173,25 @@
   </section>
 
   <!-- ============ RESERVE CTA ============ -->
-  <section id="reserve" class="grain relative overflow-hidden bg-ink py-24 text-center text-foam">
+  <section id="contacto" class="grain relative overflow-hidden bg-ink py-24 text-center text-foam">
     <div class="pointer-events-none absolute left-1/2 top-1/2 h-[28rem] w-[28rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-aqua/15 blur-3xl"></div>
     <div class="fade-up relative mx-auto max-w-2xl px-5">
-      <h2 class="font-display text-4xl font-light md:text-5xl">Save your seat</h2>
-      <p class="mt-4 text-foam/75">We seat parties of up to eight. For private events and buyouts, email us and we will make it special.</p>
+      <h2 class="font-display text-4xl font-light md:text-5xl">¿Tenés ropa para lavar?</h2>
+      <p class="mt-4 text-foam/75">Escribinos por WhatsApp y coordinamos. También podés llamarnos o pasar el local.</p>
       <div class="mt-8 flex flex-wrap justify-center gap-4">
-        <a href="tel:+15550100" class="rounded-full bg-aqua px-8 py-4 font-bold uppercase tracking-widest text-ink transition hover:bg-foam">Call (555) 010-0124</a>
-        <a href="mailto:hello@thecopperfig.example" class="rounded-full border border-foam/30 px-8 py-4 uppercase tracking-widest transition hover:border-aqua hover:text-aqua">Email Us</a>
+        <a href="https://wa.me/5492477611241" target="_blank" rel="noopener" class="rounded-full bg-aqua px-8 py-4 font-bold uppercase tracking-widest text-ink transition hover:bg-foam">WhatsApp 2477 611241</a>
+        <a href="tel:+5492477611241" class="rounded-full border border-foam/30 px-8 py-4 uppercase tracking-widest transition hover:border-aqua hover:text-aqua">Llamanos</a>
       </div>
-      <p class="mt-6 text-xs uppercase tracking-[0.3em] text-foam/50">Or link your booking widget here (Resy, OpenTable, Tock)</p>
+      <p class="mt-6 text-xs uppercase tracking-[0.3em] text-foam/50"><a href="https://www.instagram.com/lavarapi.perga" target="_blank" rel="noopener" class="transition hover:text-aqua">También estamos en Instagram: @lavarapi.perga</a></p>
     </div>
   </section>
 
   <!-- ============ FOOTER ============ -->
   <footer class="bg-ink pb-10 pt-6 text-center text-xs uppercase tracking-[0.25em] text-foam/50">
     <div class="mx-auto max-w-6xl border-t border-foam/10 px-5 pt-8">
-      <p class="font-display normal-case tracking-normal text-lg text-foam/80">The Copper Fig</p>
-      <p class="mt-3">124 Grove Street &middot; Your City &middot; (555) 010-0124</p>
-      <p class="mt-3">&copy; 2026 The Copper Fig. All rights reserved.</p>
+      <p class="font-display normal-case tracking-normal text-lg text-foam/80">Lavarapi</p>
+      <p class="mt-3">Monroe 532 &middot; Pergamino &middot; 2477 611241 &middot; 2477 455395</p>
+      <p class="mt-3">&copy; 2026 Lavarapi. Todos los derechos reservados.</p>
     </div>
   </footer>
 
@@ -215,15 +215,25 @@
     document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
   </script>
 
+  <!-- TODO: cuando haya dominio, agregar "url" y "image" (dirección completa del logo) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Restaurant",
-    "name": "The Copper Fig",
-    "servesCuisine": "Seasonal, Mediterranean",
-    "telephone": "(555) 010-0124",
-    "address": { "@type": "PostalAddress", "streetAddress": "124 Grove Street", "addressLocality": "Your City" },
-    "priceRange": "$$"
+    "@type": "DryCleaningOrLaundry",
+    "name": "Lavarapi",
+    "telephone": ["+54 9 2477 611241", "+54 9 2477 455395"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Monroe 532",
+      "addressLocality": "Pergamino",
+      "addressRegion": "Buenos Aires",
+      "addressCountry": "AR"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "08:00", "closes": "20:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "13:00" }
+    ],
+    "sameAs": ["https://www.instagram.com/lavarapi.perga"]
   }
   </script>
 </body>
